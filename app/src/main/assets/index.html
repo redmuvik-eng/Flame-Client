@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FLAME CLIENT</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#101010;color:white;
+ font-family:Arial,sans-serif;text-align:center;
+}
+header{padding:35px 15px;background:#191919}
+h1{color:#ff6500;font-size:34px}
+p{color:#aaa}
+main{padding:20px}
+button{
+ width:90%;padding:17px;margin:10px;
+ border:0;border-radius:12px;
+ background:#ff6500;color:#111;
+ font-size:17px;font-weight:bold;
+}
+.panel{
+ background:#202020;border:1px solid #ff6500;
+ border-radius:15px;padding:20px;margin-top:20px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>🔥 FLAME CLIENT</h1>
+<p>BEDROCK EDITION</p>
+</header>
+<main>
+<div class="panel">
+<h2>Добро пожаловать!</h2>
+<p>Твой игровой помощник</p>
+<button onclick="openMinecraft()">ОТКРЫТЬ MINECRAFT</button>
+</div>
+<div class="panel">
+<h2>Настройки</h2>
+<button onclick="alert('Скоро появится!')">Оформление</button>
+<button onclick="alert('Скоро появится!')">Импорт дополнений</button>
+</div>
+</main>
+<script>
+function openMinecraft(){
+ location.href="minecraft://";
+}
+</script>
+</body>
+</html>
